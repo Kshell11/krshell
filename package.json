@@ -4,7 +4,7 @@
   "description": "minimalist build",
   "main": "index.js",
   "scripts": {
-    "test": "grunt"
+    "start": "grunt"
   },
   "author": "Kevin Shell",
   "license": "ISC",
