@@ -4,8 +4,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     connect: {
       options: {
-        port: 9000,
-        hostname: 'localhost'
+        port: process.env.PORT || 9000,
+        hostname: '*'
       },
       app: {
         options: {
@@ -14,7 +14,6 @@ module.exports = function(grunt) {
       },
       deploy: {
         options: {
-          hostname: '0.0.0.0',
           base: 'app'
         }
       }
