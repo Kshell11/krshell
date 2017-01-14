@@ -11,11 +11,6 @@ module.exports = function(grunt) {
         options: {
           base: 'app'
         }
-      },
-      deploy: {
-        options: {
-          base: 'app'
-        }
       }
     }
   });
@@ -27,7 +22,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('deploy', ['connect:deploy:keepalive']);
   // Default task(s).
-  grunt.registerTask('default', ['deploy']);
+  grunt.registerTask('default', ['serve']);
 
 
 };
